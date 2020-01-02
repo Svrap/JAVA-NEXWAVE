@@ -1,83 +1,53 @@
-package dummy;
-
+package DBCON;
+import java.sql.Date;;
 public class Student {
-	 int Rollno;
-	 String Name;
-	 int Maths;
-	 int Science;
-	 int social;
-	//private char[] getDivision;
-	public Student(int rollno, String name, int maths, int science, int social) {
-		this.Rollno = rollno;
-		this.Name = name;
-		this.Maths = maths;
-		this.Science = science;
-		this.social = social;
+	int rno;
+	String name;
+	int age;
+	Date dob;
+	
+	public Student() {
+		
 	}
-	public int getRollno() {
-		return Rollno;
+
+	public Student(int rno, String name, int age, Date dob) {
+		super();
+		this.rno = rno;
+		this.name = name;
+		this.age = age;
+		this.dob = dob;
 	}
+
+	public int getRno() {
+		return rno;
+	}
+
+	public void setRno(int rno) {
+		this.rno = rno;
+	}
+
 	public String getName() {
-		return Name;
+		return name;
 	}
-	public int getMaths() {
-		return Maths;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	public int getScience() {
-		return Science;
+
+	public int getAge() {
+		return age;
 	}
-	public int getSocial() {
-		return social;
+
+	public void setAge(int age) {
+		this.age = age;
 	}
-	public int getTotal() {
-		return Maths+Science+social;
+
+	public Date getDob() {
+		return dob;
 	}
-	public int getAverage() {
-		return ((Maths+Science+social)/3);
+
+	public void setDob(Date dob) {
+		this.dob = dob;
 	}
-	public String getResults() {
-		if(Maths>40 && Science > 40 && social >40)
-		{
-			return "Passed";
-			
-		}
-		return "Failed";
-	}
-	public String getDivision() {
-		if(Maths>40 && Science > 40 && social >40) {
-		int avg= getAverage();
-		if(avg>70)
-		{
-	        return "First class";
-		}
-		else if(avg>50)
-		{
-			 return "second class";
-		}
-		else
-		{
-			 return "third class";
-		}
-		}
-		else
-			return "Nill ";
-	}
-	
-	public static void main(String [] args)
-	{
-		Student[] s = { new Student(101,"john",10,80,70) ,new Student(101,"john",10,80,70)  };
-		for(int i=0;i<2;i++)
-		{
-		System.out.println(s[i].getRollno());
-		System.out.println(s[i].getName());
-		System.out.println(s[i].getTotal());
-		System.out.println(s[i].getAverage());
-		System.out.println(s[i].getResults());
-		System.out.println(s[i].getDivision());
-		System.out.println("\n");
-		}
-		
-		
-	}
-	
+
 }
