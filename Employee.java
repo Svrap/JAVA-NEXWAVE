@@ -1,5 +1,4 @@
-package DBCON;
-
+package com.del.second.entity;
 import java.sql.Date;
 
 public class Employee  {
@@ -40,4 +39,4 @@ public class Employee  {
 		this.doj = doj;
 	}
 }
-	
+
