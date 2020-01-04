@@ -94,6 +94,7 @@ public class EmployeeDao {
 					"jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger"); 
 			pst = con.prepareStatement("delete from emp1 where empid=?");
 			pst.setInt(1,empid);
+			
 			count = pst.executeUpdate();
 		}
 		catch(Exception ex)
@@ -127,7 +128,7 @@ public class EmployeeDao {
 			Class.forName("oracle.jdbc.driver.OracleDriver");  
 			con=DriverManager.getConnection(  
 					"jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger"); 
-			pst = con.prepareStatement("select * from employee where empid=? ");
+			pst = con.prepareStatement("select * from emp1 where empid=? ");
 			pst.setInt(1, empid);
 			rs = pst.executeQuery();
 			if(rs.next())
@@ -169,6 +170,7 @@ public class EmployeeDao {
 			rs = pst.executeQuery();
 			while(rs.next())
 				elist.add( new Employee(rs.getInt(1),rs.getString(2),rs.getDouble(3),rs.getDate(4))); 
+			
 		}
 		catch(Exception ex)
 		{
