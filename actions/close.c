@@ -1,0 +1,5 @@
+close()
+{
+
+	return 0;
+}
