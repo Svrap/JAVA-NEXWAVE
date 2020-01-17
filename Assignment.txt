@@ -1,0 +1,37 @@
+BVT- Build Verification System
+Build Verification Test is a set of tests run on every new build to verify that build is testable before it is released to test team for further testing
+Each Build is associated with a version number and a release note attached to it.
+Build manager is responsible for communicating to stake holders.
+The build is incremented for every change in the build.
+Defect life cycle:
+A Defect life cycle, also known as a Bug life cycle, is a cycle of a defect from which it goes through covering the different states in its entire life
+The following are the defects based on defect life cycle
+1.defect status is "New" when defect is created.
+2.Then it will be discussed by triage team wheather it is valid or not and by whom it should be fixed.
+3.If the defect is valid,then the status is chaged to "Open".
+4.If invalid then status is "Rejected/Cancled".
+5.If the defect is decided to fix later then status is "Defered'.
+6.After solving the defect the status is "Fixed".
+7.IF the defect is found again then "Re-Open".
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Testing is a process rather than a single activity. This process starts from test planning then designing test cases,
+Test Desgin:
+Test design is a process that describes “how” testing should be done. It includes processes for the identifying test cases by enumerating steps of 
+the defined test conditions. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTTP:
+Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML.
+It was designed for communication between web browsers and web servers, but it can also be used for other purposes
+Soap:
+SOAP stands for Simple Object Access Protocol
+SOAP is an application communication protocol
+SOAP is a format for sending and receiving messages
+SOAP is platform independent and uses Wsdl 
+SOAP is based on XML
+Rest:
+REST Stands for Representational State Transfer.
+It is fast than soap because there is no strict specification like soap
+It uses UNIFORM RESOURCE IDENTIDER.
+It is a software architectural style that defines a set of constraints to be used for creating Web services.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
